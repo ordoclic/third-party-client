@@ -8,7 +8,7 @@ const key = new NodeRSA(privateKeyPEM, 'pkcs1');
 //key.importKey(privateKeyPEM, 'pkcs8'); 
 const privateKey = key.exportKey();
 
-// 2. Sign the data with the decoded private key and sha256 then encode it with base64
+// 2. Sign the data with the decoded private key and sha512 then encode it with base64
 const partnerId = process.argv[2];
 const rpps = process.argv[3];
 const dateTime = new Date();
