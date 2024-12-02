@@ -21,7 +21,7 @@ $signatureBase64 = base64_encode($signature);
 $dataSigned = array_merge($dataToSign, ['sig' => $signatureBase64]);
 $dataSignedJson = json_encode($dataSigned);
 
-$url = 'https://partners.test.ordoclic.fr/v1/auth';
+$url = 'https://partners.staging.ordoclic.fr/v1/auth';
 $options = [
     'http' => [
         'method' => 'POST',
