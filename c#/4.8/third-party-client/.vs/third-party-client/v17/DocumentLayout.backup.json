@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\test\\source\\repos\\third-party-client\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C58C2398-99A4-4DD1-A902-33BE358C9C8A}|third-party-client\\third-party-client.csproj|c:\\users\\test\\source\\repos\\third-party-client\\third-party-client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C58C2398-99A4-4DD1-A902-33BE358C9C8A}|third-party-client\\third-party-client.csproj|solutionrelative:third-party-client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\test\\source\\repos\\third-party-client\\third-party-client\\Program.cs",
+              "RelativeDocumentMoniker": "third-party-client\\Program.cs",
+              "ToolTip": "C:\\Users\\test\\source\\repos\\third-party-client\\third-party-client\\Program.cs",
+              "RelativeToolTip": "third-party-client\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAzszMzMwnwAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T16:04:07.388Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
