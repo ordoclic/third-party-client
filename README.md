@@ -1,8 +1,8 @@
-# How to use Ordoclic Third-Party ? 
+# How to use Ordoclic Third-Party ?
 
-step 1  : 
-    
-    Build the below object : 
+step 1  :
+
+    Build the below object :
 
     ```
     {
@@ -12,12 +12,12 @@ step 1  :
     }
     ```
 
-step 2 : 
+step 2 :
 
     Sign this object with the private key given by Ordoclic team
     The algorithme is : PKCS1v15
-    You'll find an example of signature in the example project 
-    With the signature build the below object : 
+    You'll find an example of signature in the example project
+    With the signature build the below object :
     ```
     {
         "partnerId":"value",
@@ -27,7 +27,7 @@ step 2 :
     }
     ```
 
-step 3 : 
+step 3 :
 
     Send a request to Ordoclic third-party service
 
@@ -35,11 +35,11 @@ step 3 :
     location production : https://partners.ordoclic.fr/v1/auth
 
     route : `POST {{location}}/third-party/auth`
-    header : 
+    header :
     ```
     Content-Type : application/json
     ```
-    body : 
+    body :
     ```
         {
         "partnerId":"value",
@@ -48,7 +48,7 @@ step 3 :
         "sig": "value"
     }
     ```
-    response : 
+    response :
     ```
     {
         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzYyMDQ2NjcsImlkZW50aXR5Ijoie1wicHJvZmVzc2lvbmFsXCI6e1wiaWRcIjpcIjk5ZWVjMmNhLTJlMDktNGE0OS04MDMyLWM2ZTE4YmYxYTM4Y1wiLFwicnBwc1wiOlwiOTk3MDAwOTI2NDBcIixcImZpcnN0TmFtZVwiOlwiUmFjaGVsbGVcIixcImxhc3ROYW1lXCI6XCJIT1VERVwiLFwiZnVsbE5hbWVcIjpcIlJhY2hlbGxlIEhPVURFXCIsXCJlbWFpbFwiOlwibWF4aW1lLmxhcnF1ZW1pbkBvcmRvY2xpYy5mclwiLFwiZ2VuZGVyXCI6XCJGXCIsXCJiaXJ0aGRheVwiOlwiMTkzMy0wMi0xNlQwMDowMDowMFpcIixcImNyZWF0ZWRBdFwiOlwiMTk4NC0wNi0xOFQxMzo0OTo0NS43ODcxMTErMDI6MDBcIixcImxhc3RDb25uZWN0aW9uXCI6XCIyMDE5LTEyLTEyVDE5OjM2OjEzLjU1Mjc5NSswMTowMFwiLFwidGl0bGVJRFwiOjIsXCJqb2JJRFwiOjMsXCJzcGVjaWFsdHlJZFwiOjMzMCxcImxhdFwiOjAsXCJsbmdcIjowLFwiYWRlbGlcIjpcIlwiLFwiYWN0aXZhdGVkXCI6dHJ1ZSxcImFjdGl2YXRlZEF0XCI6XCIyMDE5LTA2LTE4VDEzOjQ5OjQ3LjcwMDY3NlpcIixcImNyZWF0ZWRCeVwiOlwiMjZlOWE0YmMtMjg3MC00NTYxLWFiNTktYzUxNjdlOThlZGZiXCIsXCJjcmVhdGlvbk1ldGhvZFwiOlwiU3RhZmYgQWRtaW5cIn0sXCJyb2xlXCI6XCJ0aGlyZC1wYXJ0eVwiLFwiYWNjb3VudElkXCI6XCIyMTg2YzVmMy05ODVmLTQ0YjMtYTAzMC00M2QzNTk4YTA0ZjlcIixcImVudGl0eUlkXCI6bnVsbH0iLCJyb2xlIjoidGhpcmQtcGFydHkifQ.ea69gYg1hMzFtVOh1VigZy1Lu7TMlTRjyY-7TflPt4w",
@@ -82,8 +82,8 @@ step 3 :
         }
     }
     ```
-step 4 : 
+step 4 :
 
     Get the `token` field like a Bearer token to https://partners.staging.ordoclic.fr or  https://partners.ordoclic.fr
-    The documentation : https://www.ordoclic.fr/api
-    
+    The documentation : https://partners.test.ordoclic.fr/swaggerui/#/
+
