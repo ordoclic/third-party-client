@@ -59,7 +59,7 @@ public class AuthRequestService {
 
             System.out.println("signed json:");
             System.out.println(signedPayload);
-            
+
             HttpClient httpClient = HttpClient.newHttpClient();
             HttpRequest httpRequest = HttpRequest.newBuilder()
                 .uri(new URI(ODC_AUTH_URL))
@@ -79,7 +79,7 @@ public class AuthRequestService {
 
         String privateKeyPEM = key
                 .replace("-----BEGIN RSA PRIVATE KEY-----", "")
-                .replaceAll(System.lineSeparator(), "")
+                .replaceAll("[\\n\\r]", "")
                 .replace("-----END RSA PRIVATE KEY-----", "");
 
         byte[] encoded = Base64.getDecoder().decode(privateKeyPEM);
